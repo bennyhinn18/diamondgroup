@@ -1909,8 +1909,7 @@ dialog.quote-dialog::backdrop {
 
 /* Gallery Component */
 .product-gallery-wrap {
-  position: sticky;
-  top: 100px;
+  position: relative;
 }
 
 .product-gallery-main {
@@ -2079,6 +2078,18 @@ dialog.quote-dialog::backdrop {
 }
 
 /* Specs Table */
+.product-specs-section {
+  margin-top: 2.25rem;
+}
+
+.product-specs-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--c-emerald-950);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.01em;
+}
+
 .spec-box {
   border: 1px solid var(--c-border-light);
   border-radius: var(--radius-md);
@@ -2314,6 +2325,17 @@ dialog.quote-dialog::backdrop {
   }
   .collection-select {
     flex: 1 1 100%;
+    width: 100%;
+  }
+  .spec-row {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+  }
+  .spec-key {
+    width: 100%;
+  }
+  .spec-val {
     width: 100%;
   }
 }
