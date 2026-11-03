@@ -1688,52 +1688,7 @@ dialog.quote-dialog::backdrop {
     margin-bottom: 2rem;
   }
   .top-bar {
-    padding: 0.45rem 0;
-  }
-  .top-bar-inner {
-    justify-content: center;
-  }
-  .top-bar-contact {
-    width: 100%;
-    justify-content: center;
-    gap: 0;
-  }
-  .top-bar-tagline,
-  .top-bar-links,
-  .top-bar-email,
-  .top-bar-location {
     display: none !important;
-  }
-  .top-bar-phone {
-    display: flex !important;
-    justify-content: center;
-    width: 100%;
-  }
-  .top-bar-phone a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    background: var(--c-gold-gradient);
-    color: var(--c-emerald-950) !important;
-    font-weight: 700;
-    font-size: 0.88rem;
-    padding: 0.42rem 1.4rem;
-    border-radius: var(--radius-full);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
-    text-decoration: none;
-    letter-spacing: 0.02em;
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  }
-  .top-bar-phone a:hover,
-  .top-bar-phone a:active {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(197, 155, 39, 0.35);
-  }
-  .top-bar-phone a svg {
-    width: 14px;
-    height: 14px;
-    fill: var(--c-emerald-950) !important;
   }
   .main-nav,
   .nav-actions .btn-primary {
@@ -1757,6 +1712,15 @@ dialog.quote-dialog::backdrop {
   .floating-actions {
     bottom: 1.25rem;
     right: 1.25rem;
+    gap: 0.6rem;
+  }
+  .float-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .float-btn svg {
+    width: 24px;
+    height: 24px;
   }
 }
 
