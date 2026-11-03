@@ -743,6 +743,12 @@ img {
   color: #c0cfc8;
 }
 
+/* Generic Content Section */
+.section {
+  padding: 5.5rem 0;
+  position: relative;
+}
+
 /* Section Header Generic */
 .section-header {
   text-align: center;
@@ -1680,6 +1686,9 @@ dialog.quote-dialog::backdrop {
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 3.75rem 0;
+  }
   .hero-stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.85rem;
