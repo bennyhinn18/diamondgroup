@@ -200,7 +200,7 @@
   <!-- Core Brand Proposition Banner -->
   <section style="background: var(--c-surface-card); border-bottom: 1px solid var(--c-border); padding: 2rem 0;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; text-align: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1.5rem; text-align: center;">
         <div style="padding: 1rem;">
           <h4 style="margin: 0 0 0.35rem; color: var(--c-gold-dark); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Kerala Timber</h4>
           <p style="margin: 0; font-size: 0.88rem; color: var(--c-text-muted);">Sourced locally from Kerala; solid wood construction.</p>
@@ -233,7 +233,7 @@
         <div class="section-divider"></div>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center; margin-top: 3.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin-top: 3.5rem;">
         <!-- Left: Image Showcase with Angle Previews -->
         <div>
           <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--c-border);">
@@ -393,23 +393,23 @@
         <div class="section-divider"></div>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(1.5rem, 4vw, 2.5rem); margin-top: 3.5rem;">
         <!-- Card 1: Handcrafted Wooden Cot -->
-        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
+        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s; min-width: 0; max-width: 100%;">
           <div style="position: relative; height: 260px; overflow: hidden;">
             <img src="../Assets/furniture/bed-workshop-ornate.webp" alt="Handcrafted Traditional Wooden Cot" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-emerald-950); color: var(--c-gold-bright); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">In Stock &bull; Featured</span>
           </div>
-          <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="margin: 0 0 0.5rem; font-size: 1.35rem; color: var(--c-emerald-950);">Handcrafted Traditional Wooden Cot</h3>
+          <div style="padding: clamp(1.2rem, 4vw, 1.75rem); display: flex; flex-direction: column; flex-grow: 1; min-width: 0;">
+            <h3 style="margin: 0 0 0.5rem; font-size: clamp(1.15rem, 3.5vw, 1.35rem); color: var(--c-emerald-950); word-break: break-word;">Handcrafted Traditional Wooden Cot</h3>
             <p style="font-size: 0.92rem; color: var(--c-text-muted); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
               Intricate floral headboard crest, structured rectangular footboard, substantial corner posts, and confirmed solid-wood sleeping platform.
             </p>
-            <div style="display: flex; gap: 0.75rem;">
-              <a href="product/?id=handcrafted-wooden-cot" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="product/?id=handcrafted-wooden-cot" class="btn btn-secondary" style="flex: 1 1 170px; min-width: 0; padding: 0.75rem 1rem; justify-content: center; text-align: center;">
                 <span>View All Angles</span>
               </a>
-              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20am%20interested%20in%20the%20Handcrafted%20Traditional%20Wooden%20Cot" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px;" title="Enquire on WhatsApp">
+              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20am%20interested%20in%20the%20Handcrafted%20Traditional%20Wooden%20Cot" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px; flex-shrink: 0; min-width: 44px; justify-content: center;" title="Enquire on WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
               </a>
             </div>
@@ -417,21 +417,21 @@
         </div>
 
         <!-- Card 2: Solid Hardwood Dining Table Suite -->
-        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
+        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s; min-width: 0; max-width: 100%;">
           <div style="position: relative; height: 260px; overflow: hidden;">
             <img src="../Assets/furniture/dining-table-angle-1.webp" alt="Solid Hardwood Dining Table Suite" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-emerald-950); color: var(--c-gold-bright); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">In Stock &bull; Dining</span>
           </div>
-          <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="margin: 0 0 0.5rem; font-size: 1.35rem; color: var(--c-emerald-950);">Solid Hardwood Dining Table Suite</h3>
+          <div style="padding: clamp(1.2rem, 4vw, 1.75rem); display: flex; flex-direction: column; flex-grow: 1; min-width: 0;">
+            <h3 style="margin: 0 0 0.5rem; font-size: clamp(1.15rem, 3.5vw, 1.35rem); color: var(--c-emerald-950); word-break: break-word;">Solid Hardwood Dining Table Suite</h3>
             <p style="font-size: 0.92rem; color: var(--c-text-muted); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
               Crafted from Kerala timber with ergonomic solid wood seating. Available from 6-seater to 12-seater configurations with natural or polished finishes.
             </p>
-            <div style="display: flex; gap: 0.75rem;">
-              <a href="product/?id=solid-wood-dining-table" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="product/?id=solid-wood-dining-table" class="btn btn-secondary" style="flex: 1 1 170px; min-width: 0; padding: 0.75rem 1rem; justify-content: center; text-align: center;">
                 <span>View Table Angles</span>
               </a>
-              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20am%20interested%20in%20the%20Solid%20Hardwood%20Dining%20Table%20Suite" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px;" title="Enquire on WhatsApp">
+              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20am%20interested%20in%20the%20Solid%20Hardwood%20Dining%20Table%20Suite" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px; flex-shrink: 0; min-width: 44px; justify-content: center;" title="Enquire on WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
               </a>
             </div>
@@ -439,21 +439,21 @@
         </div>
 
         <!-- Card 3: Custom Architectural Orders -->
-        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
+        <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s; min-width: 0; max-width: 100%;">
           <div style="position: relative; height: 260px; overflow: hidden;">
             <img src="../Assets/furniture/bed-angle-carving-detail.webp" alt="Custom Architectural Wooden Furniture" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-gold-dark); color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">Made to Order</span>
           </div>
-          <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="margin: 0 0 0.5rem; font-size: 1.35rem; color: var(--c-emerald-950);">Custom Furniture &amp; Architectural Blueprints</h3>
+          <div style="padding: clamp(1.2rem, 4vw, 1.75rem); display: flex; flex-direction: column; flex-grow: 1; min-width: 0;">
+            <h3 style="margin: 0 0 0.5rem; font-size: clamp(1.15rem, 3.5vw, 1.35rem); color: var(--c-emerald-950); word-break: break-word;">Custom Furniture &amp; Architectural Blueprints</h3>
             <p style="font-size: 0.92rem; color: var(--c-text-muted); line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
               Custom dimensions, CAD drawings, executive desks, Pooja mandirs, and traditional Kerala diwans built to your exact specifications.
             </p>
-            <div style="display: flex; gap: 0.75rem;">
-              <a href="product/?id=custom-furniture-orders" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="product/?id=custom-furniture-orders" class="btn btn-secondary" style="flex: 1 1 170px; min-width: 0; padding: 0.75rem 1rem; justify-content: center; text-align: center;">
                 <span>View Custom Process</span>
               </a>
-              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20have%20a%20custom%20furniture%20order%20I%20would%20like%20to%20discuss" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px;" title="Enquire on WhatsApp">
+              <a href="https://wa.me/918943180277?text=Hello%20Asha%20Furniture,%20I%20have%20a%20custom%20furniture%20order%20I%20would%20like%20to%20discuss" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0 12px; flex-shrink: 0; min-width: 44px; justify-content: center;" title="Enquire on WhatsApp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
               </a>
             </div>
@@ -466,7 +466,7 @@
   <!-- Craftsmanship & Workshop Authenticity -->
   <section class="section" style="background: var(--c-surface); border-top: 1px solid var(--c-border);" id="craftsmanship">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(1.5rem, 4vw, 3rem); align-items: center;">
         <div>
           <span class="section-eyebrow">Workshop Standard</span>
           <h2 style="margin-top: 0.5rem; margin-bottom: 1.25rem;">Real Wood. Real Craftsmanship. Your Vision.</h2>
@@ -528,9 +528,9 @@
         </p>
 
         <!-- Dynamic WhatsApp Form -->
-        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(197, 155, 39, 0.3); border-radius: 12px; padding: clamp(1.5rem, 4vw, 2.75rem); text-align: left;">
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(197, 155, 39, 0.3); border-radius: 12px; padding: clamp(1.25rem, 4vw, 2.75rem); text-align: left;">
           <form id="furnitureQuickEnquiry" onsubmit="handleQuickSubmit(event)">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
               <div>
                 <label for="clientName" style="display: block; font-size: 0.85rem; color: var(--c-gold-bright); font-weight: 600; margin-bottom: 0.35rem;">Your Name *</label>
                 <input type="text" id="clientName" required placeholder="e.g. Ramesh Menon" style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.3); color: #ffffff; font-size: 0.95rem;">
@@ -541,7 +541,7 @@
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1.25rem; margin-bottom: 1.25rem;">
               <div>
                 <label for="itemInterest" style="display: block; font-size: 0.85rem; color: var(--c-gold-bright); font-weight: 600; margin-bottom: 0.35rem;">Product of Interest *</label>
                 <select id="itemInterest" style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: #1b261f; color: #ffffff; font-size: 0.95rem;">
@@ -567,11 +567,11 @@
             </div>
 
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button type="submit" class="btn btn-whatsapp" style="flex: 2; padding: 1rem; font-size: 1.05rem; justify-content: center;">
+              <button type="submit" class="btn btn-whatsapp" style="flex: 2 1 200px; padding: 1rem; font-size: 1.05rem; justify-content: center;">
                 <span>Send Enquiry on WhatsApp</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/></svg>
               </button>
-              <a href="tel:+918943180277" class="btn btn-secondary" style="flex: 1; border-color: rgba(255,255,255,0.3); color: #ffffff; justify-content: center;">
+              <a href="tel:+918943180277" class="btn btn-secondary" style="flex: 1 1 200px; border-color: rgba(255,255,255,0.3); color: #ffffff; justify-content: center;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                 <span>Call +91 89431 80277</span>
               </a>
