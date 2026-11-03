@@ -10,8 +10,8 @@ export const FURNITURE_PRODUCTS = [
     name: "Handcrafted Traditional Wooden Cot",
     eyebrow: "Featured Wooden Cot • Architectural Design 01",
     subtitle: "Bring timeless craftsmanship into your home with a handcrafted wooden cot featuring intricate traditional carving, substantial corner posts, and a confirmed 100% solid-wood sleeping platform.",
-    heroImage: "../../Assets/furniture/bed-workshop-ornate.png",
-    cardThumb: "../../Assets/furniture/bed-workshop-ornate.png",
+    heroImage: "../../Assets/furniture/bed-workshop-ornate.webp",
+    cardThumb: "../../Assets/furniture/bed-workshop-ornate.webp",
     category: "Cots & Bedroom",
     status: "In Stock",
     badge: "In Stock • Featured",
@@ -26,12 +26,12 @@ export const FURNITURE_PRODUCTS = [
       { key: "Available Sizes", val: "King Size (72\" x 78\"), Queen Size (60\" x 78\"), or Custom Tailored Dimensions." }
     ],
     gallery: [
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Workshop Authentic Perspective", label: "Workshop View" },
-      { src: "../../Assets/furniture/bed-raw-workshop-full.jpg", badge: "Raw Timber Post & Side Rails View", label: "Raw Timber Post" },
-      { src: "../../Assets/furniture/bed-angle-carving-detail.png", badge: "Headboard Floral Motif & Lattice Detail", label: "Carving Detail" },
-      { src: "../../Assets/furniture/bed-angle-raw-headboard.png", badge: "Solid-Wood Sleeping Platform & Corner Posts", label: "Platform View" },
-      { src: "../../Assets/furniture/bed-showcase-1.png", badge: "Polished Mahogany Finished Showcase", label: "Polished Concept" },
-      { src: "../../Assets/furniture/bed-raw-vs-polished.png", badge: "Raw Wood vs Finished Mahogany Comparison", label: "Finishing Comparison" }
+      { src: "../../Assets/furniture/bed-workshop-ornate.webp", badge: "Workshop Authentic Perspective", label: "Workshop View" },
+      { src: "../../Assets/furniture/bed-raw-workshop-full.webp", badge: "Raw Timber Post & Side Rails View", label: "Raw Timber Post" },
+      { src: "../../Assets/furniture/bed-angle-carving-detail.webp", badge: "Headboard Floral Motif & Lattice Detail", label: "Carving Detail" },
+      { src: "../../Assets/furniture/bed-angle-raw-headboard.webp", badge: "Solid-Wood Sleeping Platform & Corner Posts", label: "Platform View" },
+      { src: "../../Assets/furniture/bed-showcase-1.webp", badge: "Polished Mahogany Finished Showcase", label: "Polished Concept" },
+      { src: "../../Assets/furniture/bed-raw-vs-polished.webp", badge: "Raw Wood vs Finished Mahogany Comparison", label: "Finishing Comparison" }
     ],
     options: {
       raw: "Allows you to inspect the 100% solid wood and joinery directly, or independently engage your trusted polisher.",
@@ -45,8 +45,8 @@ export const FURNITURE_PRODUCTS = [
     name: "Solid Hardwood Dining Table Suite",
     eyebrow: "Dining Suite • Master Woodcraft",
     subtitle: "Solid hardwood dining table suite handcrafted by Asha Furniture. Custom seating from 6 to 12 seats, authentic wood grain, robust traditional joinery, and dual finishing options.",
-    heroImage: "../../Assets/furniture/dining-table-angle-1.png",
-    cardThumb: "../../Assets/furniture/dining-table-angle-1.png",
+    heroImage: "../../Assets/furniture/dining-table-angle-1.webp",
+    cardThumb: "../../Assets/furniture/dining-table-angle-1.webp",
     category: "Dining Suites",
     status: "In Stock",
     badge: "In Stock • Dining",
@@ -60,9 +60,9 @@ export const FURNITURE_PRODUCTS = [
       { key: "Finishing Choices", val: "Option A: Natural Unfinished or Option B: Custom Workshop Stain & PU Sealant." }
     ],
     gallery: [
-      { src: "../../Assets/furniture/dining-table-angle-1.png", badge: "Solid Hardwood Dining Table & Ergonomic Chairs", label: "Dining Suite View" },
-      { src: "../../Assets/furniture/dining-table-angle-2.png", badge: "Tabletop Wood Grain & Hand-Shaped Profiles", label: "Wood Profiles" },
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Authentic Workshop Bench Production", label: "Workshop Bench" }
+      { src: "../../Assets/furniture/dining-table-angle-1.webp", badge: "Solid Hardwood Dining Table & Ergonomic Chairs", label: "Dining Suite View" },
+      { src: "../../Assets/furniture/dining-table-angle-2.webp", badge: "Tabletop Wood Grain & Hand-Shaped Profiles", label: "Wood Profiles" },
+      { src: "../../Assets/furniture/bed-workshop-ornate.webp", badge: "Authentic Workshop Bench Production", label: "Workshop Bench" }
     ],
     options: {
       raw: "Supplied in finely sanded raw timber state for on-site matching with your dining hall architecture.",
@@ -76,8 +76,8 @@ export const FURNITURE_PRODUCTS = [
     name: "Custom Furniture & Architectural Blueprints",
     eyebrow: "Made to Order • Bespoke Service",
     subtitle: "Asha Furniture translates your architectural CAD blueprints, interior designer specifications, or hand-drawn sketches into heirloom solid wood furniture built to exact millimetre tolerances.",
-    heroImage: "../../Assets/furniture/bed-workshop-ornate.png",
-    cardThumb: "../../Assets/furniture/bed-angle-carving-detail.png",
+    heroImage: "../../Assets/furniture/bed-workshop-ornate.webp",
+    cardThumb: "../../Assets/furniture/bed-angle-carving-detail.webp",
     category: "Custom Blueprints",
     status: "Made to Order",
     badge: "Made to Order",
@@ -91,12 +91,12 @@ export const FURNITURE_PRODUCTS = [
       { key: "Mid-Build Inspection", val: "Clients and interior designers are invited to inspect the framing in person before finishing (visits by appointment)." }
     ],
     gallery: [
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Bespoke Handcrafted Cot in Workshop", label: "Workshop Bed" },
-      { src: "../../Assets/furniture/dining-table-angle-1.png", badge: "Architectural Solid Wood Dining Suite", label: "Custom Dining" },
-      { src: "../../Assets/furniture/bed-angle-carving-detail.png", badge: "Intricate Hand-Carved Architectural Relief", label: "Carving Detail" },
-      { src: "../../Assets/furniture/bed-raw-workshop-full.jpg", badge: "Solid Timber Joinery & Sleeping Platform", label: "Joinery Structure" },
-      { src: "../../Assets/furniture/dining-table-angle-2.png", badge: "Custom Profile Wooden Seating & Tabletop", label: "Seating Profiles" },
-      { src: "../../Assets/furniture/bed-raw-vs-polished.png", badge: "Finishing Freedom: Raw Wood vs Polished", label: "Finish Freedom" }
+      { src: "../../Assets/furniture/bed-workshop-ornate.webp", badge: "Bespoke Handcrafted Cot in Workshop", label: "Workshop Bed" },
+      { src: "../../Assets/furniture/dining-table-angle-1.webp", badge: "Architectural Solid Wood Dining Suite", label: "Custom Dining" },
+      { src: "../../Assets/furniture/bed-angle-carving-detail.webp", badge: "Intricate Hand-Carved Architectural Relief", label: "Carving Detail" },
+      { src: "../../Assets/furniture/bed-raw-workshop-full.webp", badge: "Solid Timber Joinery & Sleeping Platform", label: "Joinery Structure" },
+      { src: "../../Assets/furniture/dining-table-angle-2.webp", badge: "Custom Profile Wooden Seating & Tabletop", label: "Seating Profiles" },
+      { src: "../../Assets/furniture/bed-raw-vs-polished.webp", badge: "Finishing Freedom: Raw Wood vs Polished", label: "Finish Freedom" }
     ],
     options: {
       raw: "Raw sanded delivery allows complete timber inspection and effortless coordination with other on-site interior woodwork.",
@@ -110,8 +110,8 @@ export const FURNITURE_PRODUCTS = [
     name: "Traditional Kerala Heritage Diwan",
     eyebrow: "Living Heritage • Kerala Traditional",
     subtitle: "Classic Kerala wooden diwan handcrafted with floral scrollwork cresting, curved resting arms, and a solid timber base built for timeless family living spaces.",
-    heroImage: "../../Assets/furniture/bed-angle-carving-detail.png",
-    cardThumb: "../../Assets/furniture/bed-angle-carving-detail.png",
+    heroImage: "../../Assets/furniture/bed-angle-carving-detail.webp",
+    cardThumb: "../../Assets/furniture/bed-angle-carving-detail.webp",
     category: "Living & Heritage",
     status: "Made to Order",
     badge: "Heritage Classic",
@@ -124,9 +124,9 @@ export const FURNITURE_PRODUCTS = [
       { key: "Dimensions", val: "Standard 6ft x 2.5ft or custom tailored to your living hall floor plan." }
     ],
     gallery: [
-      { src: "../../Assets/furniture/bed-angle-carving-detail.png", badge: "Carved Heritage Floral Detail", label: "Floral Motif" },
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Workshop Assembly Perspective", label: "Assembly View" },
-      { src: "../../Assets/furniture/bed-raw-vs-polished.png", badge: "Natural vs Custom Polished Options", label: "Finish Options" }
+      { src: "../../Assets/furniture/bed-angle-carving-detail.webp", badge: "Carved Heritage Floral Detail", label: "Floral Motif" },
+      { src: "../../Assets/furniture/bed-workshop-ornate.webp", badge: "Workshop Assembly Perspective", label: "Assembly View" },
+      { src: "../../Assets/furniture/bed-raw-vs-polished.webp", badge: "Natural vs Custom Polished Options", label: "Finish Options" }
     ],
     options: {
       raw: "Natural raw wood sanded smooth, ready for on-site matching with your traditional wooden pillars and doors.",
@@ -140,8 +140,8 @@ export const FURNITURE_PRODUCTS = [
     name: "Executive Hardwood Director's Desk",
     eyebrow: "Executive Office • Architectural Build",
     subtitle: "Commanding executive desk handcrafted from solid Kerala timber featuring deep storage drawers with dovetail joinery and custom cable management ports.",
-    heroImage: "../../Assets/furniture/dining-table-angle-2.png",
-    cardThumb: "../../Assets/furniture/dining-table-angle-2.png",
+    heroImage: "../../Assets/furniture/dining-table-angle-2.webp",
+    cardThumb: "../../Assets/furniture/dining-table-angle-2.webp",
     category: "Office & Study",
     status: "Made to Order",
     badge: "Executive Build",
@@ -154,9 +154,9 @@ export const FURNITURE_PRODUCTS = [
       { key: "Customization", val: "Available in 5ft, 6ft, or 7ft lengths with optional modesty panel carving." }
     ],
     gallery: [
-      { src: "../../Assets/furniture/dining-table-angle-2.png", badge: "Solid Hardwood Surface Grain", label: "Surface Detail" },
-      { src: "../../Assets/furniture/dining-table-angle-1.png", badge: "Structural Framing & Leg Joinery", label: "Leg Framing" },
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Workshop Bench View", label: "Workshop Bench" }
+      { src: "../../Assets/furniture/dining-table-angle-2.webp", badge: "Solid Hardwood Surface Grain", label: "Surface Detail" },
+      { src: "../../Assets/furniture/dining-table-angle-1.webp", badge: "Structural Framing & Leg Joinery", label: "Leg Framing" },
+      { src: "../../Assets/furniture/bed-workshop-ornate.webp", badge: "Workshop Bench View", label: "Workshop Bench" }
     ],
     options: {
       raw: "Finely machine-sanded raw state for direct inspection of solid wood pedestals.",

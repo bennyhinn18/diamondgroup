@@ -7,7 +7,7 @@
    - High Contrast Dark: #101613
    ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+/* Note: Google Fonts are preconnected and loaded via <link> in HTML <head> for optimal Critical Rendering Path */
 
 :root {
   /* Brand Core Colors */

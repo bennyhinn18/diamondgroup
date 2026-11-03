@@ -19,6 +19,10 @@
   <link rel="icon" type="image/png" sizes="192x192" href="../../Assets/furniture/asha-furniture-favicon-192.png">
   <link rel="icon" type="image/png" href="../../Assets/furniture/asha-furniture-favicon.png">
   <link rel="apple-touch-icon" href="../../Assets/furniture/asha-furniture-favicon-192.png">
+  <!-- Preconnect & Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -58,7 +62,7 @@
   <header class="site-header">
     <div class="container-wide nav-container">
       <a href="../" class="asha-logo-wrap" title="Asha Furniture - Kanyakumari District, Tamil Nadu">
-        <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Logo" class="asha-logo-img">
+        <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Logo" class="asha-logo-img" width="160" height="44">
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -89,7 +93,7 @@
   <div class="drawer-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
-      <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Emblem" style="height: 44px; width: auto;">
+      <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Emblem" style="height: 44px; width: auto;" width="140" height="44">
       <button class="dialog-close-btn drawer-close-btn" aria-label="Close menu">&times;</button>
     </div>
     <ul class="drawer-menu">
@@ -123,7 +127,7 @@
         <div class="product-gallery-wrap">
           <div class="product-gallery-main">
             <span class="gallery-floating-badge" id="galleryViewBadge">Loading Angle...</span>
-            <img id="mainGalleryImg" src="../../Assets/furniture/bed-workshop-ornate.png" alt="Product Perspective - Asha Furniture">
+            <img id="mainGalleryImg" src="../../Assets/furniture/bed-workshop-ornate.webp" alt="Product Perspective - Asha Furniture" fetchpriority="high" width="1448" height="1086">
           </div>
 
           <!-- Thumbnails Strip (Populated via JS) -->
@@ -217,7 +221,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
+          <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture" loading="lazy" decoding="async" width="140" height="44" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
           <span style="display: block; font-size: 0.85rem; color: var(--c-gold-bright); letter-spacing: 0.05em; text-transform: uppercase;">An Enterprise of Diamond Group</span>
         </div>
         <p class="footer-desc">
@@ -320,7 +324,7 @@
 
       thumbStrip.innerHTML = product.gallery.map((item, idx) => `
         <button type="button" class="gallery-thumb-btn ${idx === 0 ? 'active' : ''}" data-img="${item.src}" data-badge="${item.badge}" title="${item.label}">
-          <img src="${item.src}" alt="${item.label}">
+          <img src="${item.src}" alt="${item.label}" loading="lazy" decoding="async" width="90" height="68">
         </button>
       `).join('');
 
@@ -384,7 +388,7 @@
       relatedGrid.innerHTML = otherProducts.map(p => `
         <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm);">
           <div style="position: relative; height: 230px; overflow: hidden;">
-            <img src="${p.gallery[0].src}" alt="${p.name}" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="${p.gallery[0].src}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="230" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-emerald-950); color: var(--c-gold-bright); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px;">
               ${p.badge}
             </span>

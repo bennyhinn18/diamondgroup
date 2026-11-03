@@ -19,6 +19,10 @@
   <link rel="icon" type="image/png" sizes="192x192" href="../../Assets/furniture/asha-furniture-favicon-192.png">
   <link rel="icon" type="image/png" href="../../Assets/furniture/asha-furniture-favicon.png">
   <link rel="apple-touch-icon" href="../../Assets/furniture/asha-furniture-favicon-192.png">
+  <!-- Preconnect & Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -58,7 +62,7 @@
   <header class="site-header">
     <div class="container-wide nav-container">
       <a href="../" class="asha-logo-wrap" title="Asha Furniture - Kanyakumari District, Tamil Nadu">
-        <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Logo" class="asha-logo-img">
+        <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Logo" class="asha-logo-img" width="160" height="44">
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -88,7 +92,7 @@
   <div class="drawer-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
-      <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Emblem" style="height: 44px; width: auto;">
+      <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Emblem" style="height: 44px; width: auto;" width="140" height="44">
       <button class="dialog-close-btn drawer-close-btn" aria-label="Close menu">&times;</button>
     </div>
     <ul class="drawer-menu">
@@ -226,7 +230,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="../../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
+          <img src="../../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture" loading="lazy" decoding="async" width="140" height="44" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
           <span style="display: block; font-size: 0.85rem; color: var(--c-gold-bright); letter-spacing: 0.05em; text-transform: uppercase;">An Enterprise of Diamond Group</span>
         </div>
         <p class="footer-desc">
@@ -404,7 +408,7 @@
         return `
           <article class="product-card">
             <div class="product-card-media">
-              <img src="${p.gallery && p.gallery[0] ? p.gallery[0].src : p.heroImage}" alt="${p.name}" loading="lazy">
+              <img src="${p.gallery && p.gallery[0] ? p.gallery[0].src : p.heroImage}" alt="${p.name}" loading="lazy" decoding="async" width="400" height="260">
               <span class="product-tag">${p.badge}</span>
             </div>
             <div class="product-card-body">

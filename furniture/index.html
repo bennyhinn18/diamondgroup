@@ -25,6 +25,14 @@
   <link rel="icon" type="image/png" sizes="192x192" href="../Assets/furniture/asha-furniture-favicon-192.png">
   <link rel="icon" type="image/png" href="../Assets/furniture/asha-furniture-favicon.png">
   <link rel="apple-touch-icon" href="../Assets/furniture/asha-furniture-favicon-192.png">
+
+  <!-- Preconnect & Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+
+  <!-- Preload LCP Hero Background Image -->
+  <link rel="preload" as="image" href="../Assets/furniture/hero-raw-workshop.webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Schema.org JSON-LD for Asha Furniture -->
@@ -115,7 +123,7 @@
   <header class="site-header">
     <div class="container-wide nav-container">
       <a href="./" class="asha-logo-wrap" title="Asha Furniture - Kanyakumari District, Tamil Nadu">
-        <img src="../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Logo" class="asha-logo-img">
+        <img src="../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Logo" class="asha-logo-img" width="160" height="44">
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -146,7 +154,7 @@
   <div class="drawer-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
-      <img src="../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture Emblem" style="height: 44px; width: auto;">
+      <img src="../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture Emblem" style="height: 44px; width: auto;" width="140" height="44">
       <button class="dialog-close-btn drawer-close-btn" aria-label="Close menu">&times;</button>
     </div>
     <ul class="drawer-menu">
@@ -167,7 +175,7 @@
   </aside>
 
   <!-- Flagship Hero Section -->
-  <section class="furniture-hero" style="background: linear-gradient(rgba(10, 20, 14, 0.72), rgba(10, 20, 14, 0.85)), url('../Assets/furniture/hero-raw-workshop.jpg') center/cover no-repeat; min-height: 85vh; display: flex; align-items: center; color: #ffffff; padding: 6rem 0;">
+  <section class="furniture-hero" style="background: linear-gradient(rgba(10, 20, 14, 0.72), rgba(10, 20, 14, 0.85)), url('../Assets/furniture/hero-raw-workshop.webp') center/cover no-repeat; min-height: 85vh; display: flex; align-items: center; color: #ffffff; padding: 6rem 0;">
     <div class="container">
       <div style="max-width: 780px;">
         <div style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(197, 155, 39, 0.18); border: 1px solid rgba(197, 155, 39, 0.4); padding: 0.4rem 1rem; border-radius: 50px; margin-bottom: 1.5rem;">
@@ -235,7 +243,7 @@
         <!-- Left: Image Showcase with Angle Previews -->
         <div>
           <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--c-border);">
-            <img src="../Assets/furniture/bed-workshop-ornate.png" alt="Handcrafted Traditional Wooden Cot - Asha Furniture" style="width: 100%; height: auto; display: block;">
+            <img src="../Assets/furniture/bed-workshop-ornate.webp" alt="Handcrafted Traditional Wooden Cot - Asha Furniture" loading="lazy" decoding="async" width="1448" height="1086" style="width: 100%; height: auto; display: block;">
             <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.85)); padding: 1.5rem; color: #ffffff;">
               <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-gold-bright); font-weight: 700;">Authentic Workshop Photograph</span>
               <p style="margin: 0.25rem 0 0; font-size: 0.95rem;">Photographed in raw unfinished state on our workshop floor.</p>
@@ -243,13 +251,13 @@
           </div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1rem;">
             <a href="product/?id=handcrafted-wooden-cot" style="border-radius: 6px; overflow: hidden; border: 1px solid var(--c-border); display: block;">
-              <img src="../Assets/furniture/bed-angle-carving-detail.png" alt="Headboard Carving Motif" style="width: 100%; height: 80px; object-fit: cover;">
+              <img src="../Assets/furniture/bed-angle-carving-detail.webp" alt="Headboard Carving Motif" loading="lazy" decoding="async" width="200" height="80" style="width: 100%; height: 80px; object-fit: cover;">
             </a>
             <a href="product/?id=handcrafted-wooden-cot" style="border-radius: 6px; overflow: hidden; border: 1px solid var(--c-border); display: block;">
-              <img src="../Assets/furniture/bed-angle-raw-headboard.png" alt="Solid Sleeping Platform" style="width: 100%; height: 80px; object-fit: cover;">
+              <img src="../Assets/furniture/bed-angle-raw-headboard.webp" alt="Solid Sleeping Platform" loading="lazy" decoding="async" width="200" height="80" style="width: 100%; height: 80px; object-fit: cover;">
             </a>
             <a href="product/?id=handcrafted-wooden-cot" style="border-radius: 6px; overflow: hidden; border: 1px solid var(--c-border); display: block;">
-              <img src="../Assets/furniture/bed-raw-vs-polished.png" alt="Raw vs Polished Comparison" style="width: 100%; height: 80px; object-fit: cover;">
+              <img src="../Assets/furniture/bed-raw-vs-polished.webp" alt="Raw vs Polished Comparison" loading="lazy" decoding="async" width="200" height="80" style="width: 100%; height: 80px; object-fit: cover;">
             </a>
           </div>
         </div>
@@ -344,7 +352,7 @@
         <!-- Option B: Custom Polished -->
         <div class="finish-choice-card">
           <div class="finish-card-media">
-            <img src="../Assets/furniture/bed-showcase-1.png" alt="Custom Polished Mahogany Bed Showcase - Asha Furniture">
+            <img src="../Assets/furniture/bed-showcase-1.webp" alt="Custom Polished Mahogany Bed Showcase - Asha Furniture" loading="lazy" decoding="async" width="1312" height="1199">
             <span class="finish-card-badge finish-badge-polished">Option B &bull; Custom Polished</span>
           </div>
           <div class="finish-card-body">
@@ -395,7 +403,7 @@
         <!-- Card 1: Handcrafted Wooden Cot -->
         <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
           <div style="position: relative; height: 260px; overflow: hidden;">
-            <img src="../Assets/furniture/bed-workshop-ornate.png" alt="Handcrafted Traditional Wooden Cot" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="../Assets/furniture/bed-workshop-ornate.webp" alt="Handcrafted Traditional Wooden Cot" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-emerald-950); color: var(--c-gold-bright); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">In Stock &bull; Featured</span>
           </div>
           <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
@@ -417,7 +425,7 @@
         <!-- Card 2: Solid Hardwood Dining Table Suite -->
         <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
           <div style="position: relative; height: 260px; overflow: hidden;">
-            <img src="../Assets/furniture/dining-table-angle-1.png" alt="Solid Hardwood Dining Table Suite" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="../Assets/furniture/dining-table-angle-1.webp" alt="Solid Hardwood Dining Table Suite" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-emerald-950); color: var(--c-gold-bright); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">In Stock &bull; Dining</span>
           </div>
           <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
@@ -439,7 +447,7 @@
         <!-- Card 3: Custom Architectural Orders -->
         <div style="background: #ffffff; border: 1px solid var(--c-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.25s, box-shadow 0.25s;">
           <div style="position: relative; height: 260px; overflow: hidden;">
-            <img src="../Assets/furniture/bed-angle-carving-detail.png" alt="Custom Architectural Wooden Furniture" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="../Assets/furniture/bed-angle-carving-detail.webp" alt="Custom Architectural Wooden Furniture" loading="lazy" decoding="async" width="400" height="260" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 12px; left: 12px; background: var(--c-gold-dark); color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">Made to Order</span>
           </div>
           <div style="padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1;">
@@ -502,7 +510,7 @@
 
         <div>
           <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--c-border); box-shadow: var(--shadow-lg);">
-            <img src="../Assets/furniture/bed-raw-workshop-full.jpg" alt="Asha Furniture Workshop Construction" style="width: 100%; height: auto; display: block;">
+            <img src="../Assets/furniture/bed-raw-workshop-full.webp" alt="Asha Furniture Workshop Construction" loading="lazy" decoding="async" width="1920" height="1440" style="width: 100%; height: auto; display: block;">
             <div style="padding: 1.5rem; background: var(--c-surface-card);">
               <h4 style="margin: 0 0 0.35rem; color: var(--c-emerald-950); font-size: 1.1rem;">Honest Woodcraft &bull; No Synthetic Substitutes</h4>
               <p style="margin: 0; font-size: 0.88rem; color: var(--c-text-muted); line-height: 1.5;">
@@ -585,7 +593,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="../Assets/furniture/asha-furniture-logo.png" alt="Asha Furniture" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
+          <img src="../Assets/furniture/asha-furniture-logo.webp" alt="Asha Furniture" loading="lazy" decoding="async" width="140" height="44" style="max-height: 48px; width: auto; margin-bottom: 0.75rem; background: #ffffff; padding: 4px 10px; border-radius: 4px;">
           <span style="display: block; font-size: 0.85rem; color: var(--c-gold-bright); letter-spacing: 0.05em; text-transform: uppercase;">An Enterprise of Diamond Group</span>
         </div>
         <p class="footer-desc">
