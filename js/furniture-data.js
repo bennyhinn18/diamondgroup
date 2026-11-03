@@ -1,6 +1,6 @@
 /**
  * Asha Furniture - Central Inventory & Products Database
- * Enterprise of Diamond Group • Kundanoor, Cochin, Kerala
+ * Enterprise of Diamond Group • Kanyakumari District, Tamil Nadu
  * Direct MD & Workshop Phone: +91 89431 80277
  */
 
@@ -22,7 +22,7 @@ export const FURNITURE_PRODUCTS = [
       { key: "Footboard Design", val: "Structured rectangular panel arrangement, square/open rectangular center sections, solid framing, and rounded corner posts." },
       { key: "Sleeping Platform", val: "Confirmed 100% Solid-Wood sleeping platform (no particle board or hollow fillers)." },
       { key: "Frame & Rails", val: "Thick wooden side rails, substantial solid corner posts, precision traditional mortise-and-tenon joinery." },
-      { key: "Timber Sourcing", val: "Sourced from Kerala. Handcrafted at our Kundanoor workshop in Cochin." },
+      { key: "Timber Sourcing", val: "Sourced from Kerala. Handcrafted at our workshop in Kanyakumari District, Tamil Nadu." },
       { key: "Available Sizes", val: "King Size (72\" x 78\"), Queen Size (60\" x 78\"), or Custom Tailored Dimensions." }
     ],
     gallery: [
@@ -37,14 +37,14 @@ export const FURNITURE_PRODUCTS = [
       raw: "Allows you to inspect the 100% solid wood and joinery directly, or independently engage your trusted polisher.",
       polished: "Workshop polishes to your preferred wood shade (Mahogany, Walnut, Teak, or Espresso) and sheen level (Matte, Satin, or Gloss)."
     },
-    metaTitle: "Handcrafted Traditional Wooden Cot | Asha Furniture Cochin Kerala",
-    metaDesc: "Handcrafted traditional wooden cot by Asha Furniture, Cochin. Featuring intricate floral carved headboard, structured footboard, solid-wood sleeping platform, and flexible finishing options."
+    metaTitle: "Handcrafted Traditional Wooden Cot | Asha Furniture Tamil Nadu",
+    metaDesc: "Handcrafted traditional wooden cot by Asha Furniture. Featuring intricate floral carved headboard, structured footboard, solid-wood sleeping platform, and flexible finishing options."
   },
   {
     id: "solid-wood-dining-table",
     name: "Solid Hardwood Dining Table Suite",
     eyebrow: "Dining Suite • Master Woodcraft",
-    subtitle: "Solid hardwood dining table suite handcrafted in Cochin by Asha Furniture. Custom seating from 6 to 12 seats, authentic wood grain, robust traditional joinery, and dual finishing options.",
+    subtitle: "Solid hardwood dining table suite handcrafted by Asha Furniture. Custom seating from 6 to 12 seats, authentic wood grain, robust traditional joinery, and dual finishing options.",
     heroImage: "../../Assets/furniture/dining-table-angle-1.png",
     cardThumb: "../../Assets/furniture/dining-table-angle-1.png",
     category: "Dining Suites",
@@ -62,14 +62,14 @@ export const FURNITURE_PRODUCTS = [
     gallery: [
       { src: "../../Assets/furniture/dining-table-angle-1.png", badge: "Solid Hardwood Dining Table & Ergonomic Chairs", label: "Dining Suite View" },
       { src: "../../Assets/furniture/dining-table-angle-2.png", badge: "Tabletop Wood Grain & Hand-Shaped Profiles", label: "Wood Profiles" },
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Authentic Kundanoor Workshop Production", label: "Workshop Bench" }
+      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Authentic Workshop Bench Production", label: "Workshop Bench" }
     ],
     options: {
       raw: "Supplied in finely sanded raw timber state for on-site matching with your dining hall architecture.",
-      polished: "Hand-rubbed stain and multi-layer heat/water-resistant polyurethane sealant executed in our Cochin workshop."
+      polished: "Hand-rubbed stain and multi-layer heat/water-resistant polyurethane sealant executed in our workshop."
     },
-    metaTitle: "Solid Hardwood Dining Table Suite | Asha Furniture Cochin Kerala",
-    metaDesc: "Solid hardwood dining table suite handcrafted in Cochin by Asha Furniture. Custom seating from 6 to 12 seats, real wood grain, robust joinery, and dual finishing options."
+    metaTitle: "Solid Hardwood Dining Table Suite | Asha Furniture Tamil Nadu",
+    metaDesc: "Solid hardwood dining table suite handcrafted by Asha Furniture. Custom seating from 6 to 12 seats, real wood grain, robust joinery, and dual finishing options."
   },
   {
     id: "custom-furniture-orders",
@@ -88,7 +88,7 @@ export const FURNITURE_PRODUCTS = [
       { key: "Input Formats", val: "AutoCAD / PDF blueprints, SketchUp 3D models, Pinterest reference photos, or hand sketches." },
       { key: "Joinery Techniques", val: "Authentic traditional mortise & tenon joinery, heavy-duty solid framing, reinforced interlocking corners." },
       { key: "Timber Sourcing", val: "Timber sourced from Kerala. Verified solid wood construction without hollow fillers." },
-      { key: "Mid-Build Inspection", val: "Clients and interior designers are invited to inspect the framing in Kundanoor before finishing." }
+      { key: "Mid-Build Inspection", val: "Clients and interior designers are invited to inspect the framing in person before finishing (visits by appointment)." }
     ],
     gallery: [
       { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Bespoke Handcrafted Cot in Workshop", label: "Workshop Bed" },
@@ -102,8 +102,8 @@ export const FURNITURE_PRODUCTS = [
       raw: "Raw sanded delivery allows complete timber inspection and effortless coordination with other on-site interior woodwork.",
       polished: "Full workshop polishing to your exact architectural sample finish, stain, and sheen."
     },
-    metaTitle: "Custom Architectural & Made-to-Order Wooden Furniture | Asha Furniture Cochin",
-    metaDesc: "Custom handcrafted wooden furniture by Asha Furniture, Cochin. Custom dimensions, architectural CAD blueprints, traditional joinery, and dual finishing choices."
+    metaTitle: "Custom Architectural & Made-to-Order Wooden Furniture | Asha Furniture",
+    metaDesc: "Custom handcrafted wooden furniture by Asha Furniture. Custom dimensions, architectural CAD blueprints, traditional joinery, and dual finishing choices."
   },
   {
     id: "kerala-heritage-diwan",
@@ -132,8 +132,8 @@ export const FURNITURE_PRODUCTS = [
       raw: "Natural raw wood sanded smooth, ready for on-site matching with your traditional wooden pillars and doors.",
       polished: "Rich heritage mahogany or golden teakwood hand-rubbed finish with silky satin protection."
     },
-    metaTitle: "Traditional Kerala Heritage Diwan | Asha Furniture Cochin",
-    metaDesc: "Handcrafted traditional Kerala wooden diwan by Asha Furniture Cochin. Authentic hand-carved floral motifs, solid wooden base, and flexible finishing options."
+    metaTitle: "Traditional Kerala Heritage Diwan | Asha Furniture",
+    metaDesc: "Handcrafted traditional Kerala wooden diwan by Asha Furniture. Authentic hand-carved floral motifs, solid wooden base, and flexible finishing options."
   },
   {
     id: "executive-hardwood-desk",
@@ -156,14 +156,14 @@ export const FURNITURE_PRODUCTS = [
     gallery: [
       { src: "../../Assets/furniture/dining-table-angle-2.png", badge: "Solid Hardwood Surface Grain", label: "Surface Detail" },
       { src: "../../Assets/furniture/dining-table-angle-1.png", badge: "Structural Framing & Leg Joinery", label: "Leg Framing" },
-      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Kundanoor Workshop Bench View", label: "Workshop Bench" }
+      { src: "../../Assets/furniture/bed-workshop-ornate.png", badge: "Workshop Bench View", label: "Workshop Bench" }
     ],
     options: {
       raw: "Finely machine-sanded raw state for direct inspection of solid wood pedestals.",
       polished: "Polyurethane sealed matte or satin executive dark espresso and rich mahogany coats."
     },
-    metaTitle: "Executive Hardwood Director's Desk | Asha Furniture Cochin",
-    metaDesc: "Solid hardwood executive desk handcrafted in Cochin by Asha Furniture. Stately design, dovetail drawers, and custom finishing choices."
+    metaTitle: "Executive Hardwood Director's Desk | Asha Furniture",
+    metaDesc: "Solid hardwood executive desk handcrafted by Asha Furniture. Stately design, dovetail drawers, and custom finishing choices."
   }
 ];
 
