@@ -1433,7 +1433,8 @@ dialog.quote-dialog::backdrop {
   overflow-y: auto;
 }
 
-.mobile-nav-drawer.open {
+.mobile-nav-drawer.open,
+.mobile-nav-drawer.active {
   right: 0;
 }
 
@@ -1448,7 +1449,8 @@ dialog.quote-dialog::backdrop {
   transition: opacity var(--transition-smooth);
 }
 
-.drawer-overlay.active {
+.drawer-overlay.active,
+.drawer-overlay.open {
   opacity: 1;
   pointer-events: auto;
 }
