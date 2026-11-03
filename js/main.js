@@ -2,7 +2,7 @@
    DIAMOND GROUP - MODERN INTERACTIVE SCRIPTS
    - Accessible Slide-out Navigation Drawer
    - Native HTML5 <dialog> Quote Modal Controller
-   - Dynamic WhatsApp Deep-link Generator for Spices & Furniture
+   - Dynamic WhatsApp Deep-link Generator for Diamond Group & Furniture
    - Filterable Catalogs & Smooth Micro-Interactions
    ========================================================================== */
 
@@ -45,14 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const openModalBtns = document.querySelectorAll(".open-quote-modal");
   const closeModalBtns = document.querySelectorAll(".close-quote-modal");
 
-  function openQuoteModal(presetDivision = "spices", presetItem = "") {
+  function openQuoteModal(presetDivision = "furniture", presetItem = "") {
     if (quoteDialog) {
       quoteDialog.showModal();
       document.body.style.overflow = "hidden";
       const divisionSelect = document.querySelector("#modalDivision");
       if (divisionSelect) {
         divisionSelect.value = presetDivision;
-        toggleModalFields(presetDivision);
       }
       const itemInput = document.querySelector("#modalItemRequirement");
       if (itemInput && presetItem) {
@@ -71,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   openModalBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      const division = btn.getAttribute("data-division") || "spices";
+      const division = btn.getAttribute("data-division") || "furniture";
       const item = btn.getAttribute("data-item") || "";
       openQuoteModal(division, item);
     });
@@ -96,28 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Division select switch inside modal
-  const modalDivision = document.querySelector("#modalDivision");
-  function toggleModalFields(val) {
-    const spicesGroup = document.querySelector("#spicesSpecificFields");
-    const furnitureGroup = document.querySelector("#furnitureSpecificFields");
-    if (spicesGroup && furnitureGroup) {
-      if (val === "furniture") {
-        spicesGroup.style.display = "none";
-        furnitureGroup.style.display = "block";
-      } else {
-        spicesGroup.style.display = "block";
-        furnitureGroup.style.display = "none";
-      }
-    }
-  }
-
-  if (modalDivision) {
-    modalDivision.addEventListener("change", (e) => {
-      toggleModalFields(e.target.value);
-    });
-  }
-
   // 3. WhatsApp Direct Lead Form Processing
   const quoteForm = document.querySelector("#quoteForm");
   if (quoteForm) {
@@ -125,39 +102,39 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const name = document.querySelector("#modalName")?.value || "";
       const phone = document.querySelector("#modalPhone")?.value || "";
-      const division = document.querySelector("#modalDivision")?.value || "general";
+      const division = document.querySelector("#modalDivision")?.value || "furniture";
       const details = document.querySelector("#modalItemRequirement")?.value || "";
-      const quantity = document.querySelector("#modalQuantity")?.value || "";
+      const dimensions = document.querySelector("#modalDimensions")?.value || "";
 
-      let msg = `Hello Diamond Group, I would like to request a quotation:%0A` +
+      let msg = `Hello Diamond Group, I would like to inquire:%0A` +
         `*Name:* ${encodeURIComponent(name)}%0A` +
         `*Phone:* ${encodeURIComponent(phone)}%0A` +
-        `*Division:* ${encodeURIComponent(division.toUpperCase())}%0A` +
+        `*Category:* ${encodeURIComponent(division.toUpperCase())}%0A` +
         `*Requirement:* ${encodeURIComponent(details)}`;
 
-      if (quantity) {
-        msg += `%0A*Volume/Quantity:* ${encodeURIComponent(quantity)}`;
+      if (dimensions) {
+        msg += `%0A*Dimensions/Specs:* ${encodeURIComponent(dimensions)}`;
       }
 
-      // WhatsApp redirection
-      const whatsappNumber = "919626180279"; // Diamond Group MD Colvin Rejie / Desk
+      // WhatsApp redirection to Managing Director (+91 89431 80277)
+      const whatsappNumber = "918943180277";
       const waUrl = `https://wa.me/${whatsappNumber}?text=${msg}`;
       
       const statusBox = document.querySelector("#modalStatusMessage");
       if (statusBox) {
         statusBox.style.display = "block";
-        statusBox.innerHTML = "<p style="color: #0e4430; font-weight: 700;">Redirecting to WhatsApp to send your quotation inquiry...</p>";
+        statusBox.innerHTML = "<p style=\"color: #0e4430; font-weight: 700;\">Connecting to Managing Director via WhatsApp...</p>";
       }
 
       setTimeout(() => {
         window.open(waUrl, "_blank");
         closeQuoteModal();
         if (statusBox) statusBox.style.display = "none";
-      }, 1000);
+      }, 800);
     });
   }
 
-  // 4. Catalog Filtering (on spices.html and furniture.html)
+  // 4. Catalog Filtering (on furniture page)
   const filterBtns = document.querySelectorAll(".filter-btn");
   const productCards = document.querySelectorAll(".product-card");
 
@@ -179,32 +156,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 5. Scroll Reveal with Intersection Observer
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll(".showcase-card, .product-card, .value-item, .contact-card-info, .form-box").forEach((el) => {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(20px)";
-      el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-      observer.observe(el);
-    });
-
-    document.addEventListener("scroll", () => {
-      document.querySelectorAll(".revealed").forEach((el) => {
-        el.style.opacity = "1";
-        el.style.transform = "translateY(0)";
-      });
-    }, { once: true });
-  }
+  // 5. Scroll Reveal & Visibility (Guaranteed Content Visibility)
+  const revealElements = document.querySelectorAll(".showcase-card, .product-card, .value-item, .contact-card-info, .form-box, .hero-stat-card");
+  revealElements.forEach((el) => {
+    el.classList.add("revealed");
+    el.style.opacity = "1";
+    el.style.transform = "none";
+  });
 });
